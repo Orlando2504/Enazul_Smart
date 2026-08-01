@@ -1,11 +1,18 @@
 import sqlite3
+import os
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-DATABASE_DIR = BASE_DIR / "database"
+if os.environ.get("RENDER"):
 
-DATABASE_DIR.mkdir(exist_ok=True)
+    DATABASE_DIR = Path("/tmp")
+
+else:
+
+    DATABASE_DIR = BASE_DIR / "database"
+
+    DATABASE_DIR.mkdir(exist_ok=True)
 
 DB_PATH = DATABASE_DIR / "enazul.db"
 
