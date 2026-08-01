@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+ENAZUL SMART
+{% endblock %}
+
+{% block contenido %}
+
+<div class="contenedor-principal">
+
+    <div class="tarjeta">
+
+        <img src="{{ url_for('static', filename='img/logo_enazul.jpg') }}"
+             class="logo">
+
+        <h1>
+
+            ENAZUL SMART
+
+        </h1>
+
+        <h2>
+
+            Sistema Inteligente de
+            <br>
+            Solicitud de Crédito
+
+        </h2>
+
+        <div class="linea"></div>
+
+        <p>
+
+            Complete el formulario para realizar el
+            filtro inicial de su solicitud.
+
+        </p>
+
+        <div class="tiempo">
+
+            ⏱ Proceso 100% digital · 2 minutos
+
+        </div>
+
+        <a href="/formulario" class="boton">
+            Iniciar Solicitud →
+        </a>
+
+        <div class="linea"></div>
+
+        <small>
+
+            🔒 La información proporcionada será tratada
+            de forma confidencial conforme a la normativa
+            sobre protección de datos personales.
+
+        </small>
+
+    </div>
+
+</div>
+
+{% endblock %}

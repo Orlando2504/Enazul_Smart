@@ -1,0 +1,162 @@
+<div class="card shadow border-0">
+
+    <div class="card-body p-4">
+
+        <h4 class="mb-4">
+            Datos Personales
+        </h4>
+
+        <form id="paso1">
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Tipo de Documento
+                </label>
+
+                <select class="form-select"
+                        id="tipo_documento"
+                        required>
+
+                    <option value="">
+                        Seleccione...
+                    </option>
+
+                    <option>DNI</option>
+
+                    <option>Carné de Extranjería</option>
+
+                </select>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Número de Documento
+                </label>
+
+                <input
+                    type="text"
+                    class="form-control"
+                    id="documento"
+                    required>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Nombres y Apellidos
+                </label>
+
+                <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    required>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-4">
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Edad
+                        </label>
+
+                        <input
+                            type="number"
+                            min="18"
+                            max="75"
+                            class="form-control"
+                            id="edad"
+                            required>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-8">
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Celular
+                        </label>
+
+                        <input
+                            type="tel"
+                            maxlength="9"
+                            class="form-control"
+                            id="celular"
+                            placeholder="987654321"
+                            required>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mb-4">
+
+                <label class="form-label">
+                    Correo electrónico (Opcional)
+                </label>
+
+                <input
+                    type="email"
+                    class="form-control"
+                    id="correo">
+
+            </div>
+
+            <div class="form-check mb-2">
+
+                <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="acepta1"
+                    required>
+
+                <label class="form-check-label">
+
+                    Declaro que la información ingresada es verdadera.
+
+                </label>
+
+            </div>
+
+            <div class="form-check mb-4">
+
+                <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="acepta2"
+                    required>
+
+                <label class="form-check-label">
+
+                    Autorizo el tratamiento de mis datos personales.
+
+                </label>
+
+            </div>
+
+            <button
+                class="btn btn-primary w-100"
+                type="submit">
+
+                Continuar →
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>

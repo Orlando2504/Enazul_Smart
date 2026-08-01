@@ -1,0 +1,156 @@
+<div class="card shadow border-0">
+
+    <div class="card-body p-4">
+
+        <h4 class="mb-4">
+            Información Laboral
+        </h4>
+
+        <form id="paso2">
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Institución
+                </label>
+
+                <select
+                    class="form-select"
+                    id="institucion"
+                    required>
+
+                    <option value="">Seleccione...</option>
+
+                    <option>MINSA</option>
+
+                    <option>ESSALUD</option>
+
+                    <option>Poder Judicial</option>
+
+                    <option>Ministerio Público</option>
+
+                    <option>RENIEC</option>
+
+                    <option>SUNAT</option>
+
+                    <option>PNP</option>
+
+                    <option>FAP</option>
+
+                    <option>Marina</option>
+
+                    <option>Municipalidad</option>
+
+                    <option>Gobierno Regional</option>
+
+                    <option>Otros</option>
+
+                </select>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Tipo de Contrato
+                </label>
+
+                <select
+                    class="form-select"
+                    id="contrato"
+                    required>
+
+                    <option value="">Seleccione...</option>
+
+                    <option>Nombrado</option>
+
+                    <option>Indeterminado</option>
+
+                    <option>Indefinido</option>
+
+                    <option>CAS Indeterminado</option>
+
+                    <option>Ley Servir</option>
+
+                </select>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Antigüedad (meses)
+                </label>
+
+                <input
+                    type="number"
+                    min="1"
+                    class="form-control"
+                    id="antiguedad"
+                    required>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Ingreso Neto / Líquido
+                </label>
+
+                <input
+                    type="number"
+                    min="0"
+                    class="form-control"
+                    id="ingreso"
+                    required>
+
+            </div>
+
+            <div
+                id="portaArmaDiv"
+                style="display:none;">
+
+                <label class="form-label">
+
+                    ¿Porta arma?
+
+                </label>
+
+                <select
+                    class="form-select"
+                    id="porta_arma">
+
+                    <option>No</option>
+
+                    <option>Sí</option>
+
+                </select>
+
+            </div>
+
+            <div class="mt-4 d-flex justify-content-between">
+
+                <button
+                    type="button"
+                    id="volverPaso1"
+                    class="btn btn-secondary">
+
+                    ← Anterior
+
+                </button>
+
+                <button
+                    type="submit"
+                    class="btn btn-primary">
+
+                    Continuar →
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+Solicitud de Crédito
+{% endblock %}
+
+{% block contenido %}
+
+<div class="container py-5">
+
+    {% include 'componentes/barra_progreso.html' %}
+
+    <div id="contenedor-paso1">
+    {% include 'componentes/paso1.html' %}
+    </div>
+
+    <div id="contenedor-paso2" style="display:none;">
+    {% include 'componentes/paso2.html' %}
+    </div>
+
+    <div id="contenedor-paso3" style="display:none;">
+    {% include 'componentes/paso3.html' %}
+    </div>
+
+</div>
+
+{% endblock %}

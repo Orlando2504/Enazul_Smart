@@ -1,0 +1,297 @@
+/* =======================================================
+   ENAZUL SMART CLIENT
+   Theme Oficial V1.0 RC
+   ======================================================= */
+
+:root{
+
+    --azul-principal:#0B5CAD;
+    --azul-secundario:#2F80ED;
+    --azul-claro:#EAF4FF;
+    --azul-fondo:#F7FBFF;
+
+    --verde:#16A34A;
+    --amarillo:#F59E0B;
+    --rojo:#DC2626;
+
+    --texto:#1E293B;
+    --gris:#64748B;
+
+    --radio:20px;
+
+}
+
+/* ================================
+            BODY
+================================ */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+        radial-gradient(circle at top left,
+        rgba(47,128,237,.18),
+        transparent 35%),
+
+        radial-gradient(circle at bottom right,
+        rgba(11,92,173,.12),
+        transparent 40%),
+
+        linear-gradient(
+            180deg,
+            #F7FBFF,
+            #EEF7FF
+        );
+
+    min-height:100vh;
+
+    color:var(--texto);
+
+}
+
+/* ================================
+            TARJETAS
+================================ */
+
+.card{
+
+    background:white;
+
+    border:none;
+
+    border-radius:24px;
+
+    backdrop-filter:blur(8px);
+
+    box-shadow:
+        0 25px 60px rgba(20,40,90,.18);
+
+    overflow:hidden;
+
+    transition:all .35s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 35px 80px rgba(20,40,90,.22);
+
+}
+
+/* ================================
+            TITULOS
+================================ */
+
+h1{
+
+    font-weight:700;
+
+    color:var(--azul-principal);
+
+}
+
+h2{
+
+    font-weight:700;
+
+    color:var(--azul-principal);
+
+}
+
+h3{
+
+    font-weight:600;
+
+}
+
+h4{
+
+    color:var(--gris);
+
+}
+
+/* ================================
+            BOTONES
+================================ */
+
+.btn-primary{
+
+    background:linear-gradient(
+        135deg,
+        #0B5CAD,
+        #2F80ED
+    );
+
+    border:none;
+
+    border-radius:18px;
+
+    padding:18px 36px;
+
+    font-size:1.2rem;
+
+    font-weight:600;
+
+    color:white;
+
+    box-shadow:
+        0 12px 30px rgba(11,92,173,.35);
+
+    transition:all .3s ease;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 20px 40px rgba(11,92,173,.45);
+
+}
+
+.btn-secondary{
+
+    border-radius:14px;
+
+}
+
+/* ================================
+        INPUTS
+================================ */
+
+.form-control,
+
+.form-select{
+
+    border-radius:14px;
+
+    border:1px solid #D9E6F5;
+
+    padding:12px;
+
+}
+
+.form-control:focus,
+
+.form-select:focus{
+
+    border-color:var(--azul-principal);
+
+    box-shadow:
+
+    0 0 0 .2rem
+
+    rgba(11,92,173,.15);
+
+}
+
+/* ================================
+        PROGRESS
+================================ */
+
+.progress{
+
+    height:12px;
+
+    border-radius:20px;
+
+    background:#E6EEF8;
+
+}
+
+.progress-bar{
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        var(--azul-principal),
+
+        var(--azul-secundario)
+
+    );
+
+}
+
+/* ================================
+        RESULTADO
+================================ */
+
+.estado-ok{
+
+    color:var(--verde);
+
+}
+
+.estado-warning{
+
+    color:var(--amarillo);
+
+}
+
+.estado-error{
+
+    color:var(--rojo);
+
+}
+
+/* ================================
+        LISTAS
+================================ */
+
+.list-group-item{
+
+    border:none;
+
+    border-bottom:1px solid #EDF2F7;
+
+}
+
+/* ================================
+        FOOTER
+================================ */
+
+.footer-smart{
+
+    margin-top:40px;
+
+    text-align:center;
+
+    color:#64748B;
+
+    font-size:.90rem;
+
+}
+
+/* ================================
+        RESPONSIVE
+================================ */
+
+@media(max-width:768px){
+
+    .card{
+
+        border-radius:18px;
+
+    }
+
+    h1{
+
+        font-size:2rem;
+
+    }
+
+    h2{
+
+        font-size:1.6rem;
+
+    }
+
+}
