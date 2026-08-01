@@ -1,14 +1,21 @@
 import sqlite3
 from pathlib import Path
 
-# Ruta de la base de datos
 BASE_DIR = Path(__file__).resolve().parent.parent
-DB_PATH = BASE_DIR / "database" / "enazul.db"
+
+DATABASE_DIR = BASE_DIR / "database"
+
+DATABASE_DIR.mkdir(exist_ok=True)
+
+DB_PATH = DATABASE_DIR / "enazul.db"
 
 
 def get_connection():
-    conn = sqlite3.connect(DB_PATH)
+
+    conn = sqlite3.connect(str(DB_PATH))
+
     conn.row_factory = sqlite3.Row
+
     return conn
 
 
